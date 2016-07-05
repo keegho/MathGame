@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Maths Game</title>
+</head>
+<body>
+<div id="container">
+    <div id="gameView">
+        <div id="score">
+            Score: <span id="scoreValue">0</span>
+
+        </div>
+        <div id="statusCorrect">
+            Correct
+        </div>
+        <div id="statusTryagain">
+            Try Again
+        </div>
+        <div id="questionView">
+            <p><span id="firstNumber">_</span>x<span id="secondNumber">_</span></p>
+        </div>
+        <div class="instructions">
+            <p>Choose the correct answer</p>
+        </div>
+        <div class="choices">
+            <ul>
+                <li id="choice0" onclick="check(this.id)">--</li>
+                <li id="choice1" onclick="check(this.id)">--</li>
+                <li id="choice2" onclick="check(this.id)">--</li>
+                <li id="choice3" onclick="check(this.id)">--</li>
+            </ul>
+        </div>
+        <div id="resetStart"  onclick="startGame()">
+
+        </div>
+        <div id="timeBox">
+            <p>Time remaning: <span id="time">10</span> sec</p>
+        </div>
+        <div id="gameOver">
+            <p>Game Over!</p>
+            <p>Your Score is <span id="finalScore">0</span>.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
